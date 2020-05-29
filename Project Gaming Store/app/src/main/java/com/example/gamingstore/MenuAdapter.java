@@ -35,11 +35,11 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
     public void onBindViewHolder(@NonNull MenuViewHolder holder, int position) {
         Menu menubaru= menus.get(position);
         String gambarbaru= menubaru.getGambar();
-        String deskripsi= menubaru.getDes();
+        String harga= menubaru.getharga();
         String nama= menubaru.getNama();
 
         holder.tvnamadata.setText(nama);
-        holder.tvdeskripsidata.setText(deskripsi);
+        holder.tvhargadata.setText(harga);
 
         Glide
                 .with(context)
@@ -55,13 +55,13 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
 
     public class MenuViewHolder extends RecyclerView.ViewHolder {
         public ImageView imdata;
-        public TextView  tvdeskripsidata;
+        public TextView  tvhargadata;
         public TextView tvnamadata;
 
         public MenuViewHolder(@NonNull View itemView) {
             super(itemView);
             imdata= itemView.findViewById(R.id.img_menu);
-            tvdeskripsidata= itemView.findViewById(R.id.tv_des);
+            tvhargadata= itemView.findViewById(R.id.tv_harga);
             tvnamadata=itemView.findViewById(R.id.tv_nama);
 
 

@@ -3,12 +3,12 @@ package com.example.gamingstore;
 public class Menu {
 
     private String nama;
-    private String des;
+    private String harga;
     private String gambar;
 
-    public Menu(String datanama, String datades, String datagambar){
+    public Menu(String datanama, String dataharga, String datagambar){
         nama=datanama;
-        des=datades;
+        harga=dataharga;
         gambar=datagambar;
     }
 
@@ -16,12 +16,11 @@ public class Menu {
         return nama;
     }
 
-    public String getDes() {
-        return des;
+    public String getharga() {
+        return harga;
     }
 
-    public String getGambar() {
-        return gambar;
-    }
+    public String getGambar() { return gambar;}
+
 }
-}
+

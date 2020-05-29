@@ -21,9 +21,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/tv_des"
+            android:id="@+id/tv_harga"
             android:textSize="18sp"
-            android:text="Deskripsi"/>
+            android:text="Harga"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

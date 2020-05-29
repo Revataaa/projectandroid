@@ -50,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
                         JSONObject data = response.getJSONObject(i);
                         String gambar = data.getString("gambar");
                         String namamenu = data.getString("nama");
-                        String deskmenu = data.getString("deskripsi");
-                        menus.add(new Menu(namamenu, deskmenu, gambar));
+                        String hargamenu = data.getString("harga");
+                        menus.add(new Menu(namamenu, hargamenu, gambar));
 
                     }
                     menuAdapter = new MenuAdapter(MainActivity.this, menus);
